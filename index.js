@@ -118,19 +118,34 @@
 
 
 
-const string = "Java Script";
+// const string = "Java Script";
 
-const letters = string.split('');
-let inverseString = '';
+// const letters = string.split('');
+// let inverseString = '';
 
-for (const letter of letters){
+// for (const letter of letters){
 
-if (letter === letter.toLocaleLowerCase()){
-inverseString += letter.toLocaleUpperCase();
+// if (letter === letter.toLocaleLowerCase()){
+// inverseString += letter.toLocaleUpperCase();
+// }
+// else{
+//   inverseString += letter.toLocaleLowerCase();
+// }
+
+// }
+// console.log(inverseString)
+
+
+
+
+
+
+
+const arays = [1 , 3 , 4 , 7, 17 , 57 , 47 , 88];
+const number = 12 ;
+
+for ( aray of arays){
+  if (number <= aray){
+    console.log ( aray  , `больше за ${number}`)
+  }
 }
-else{
-  inverseString += letter.toLocaleLowerCase();
-}
-
-}
-console.log(inverseString)
