@@ -5,8 +5,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-</head>
+    <link rel="stylesheet" type="text/css" href="style.css">
 <body>
+    <p class="text">
+        const book = {
+            title: "The Last Kingdom",
+            author: "Bernard Cornwell",
+            genres: ["historical prose", "adventure"],
+            rating: 8.38,
+          };
+          
+          for (const key in book) {
+            // Ключ
+            console.log(key);
+            // Значення властивості з таким ключем
+            console.log(book[key]);
+          }
+    </p>
     <script src="index.js"></script>
 </body>
 </html>
