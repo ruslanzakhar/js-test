@@ -14,24 +14,14 @@
 //   console.log(this);
 // }
 
-// foo();
+function count(countFrom = 1, countTo = 5, step = 1) {
+  console.log(`countFrom = ${countFrom}, countTo = ${countTo}, step = ${step}`);
 
-const temps = [14, -4, 25, 8, 11];
-
-
-
-function findNumb(){
-  let arr = [];
-  for (const temp of temps){
-    
-    if (temp > 11){
-      
-    let bigNum = arr.push(temp);
-    
-    return console.log(arr)
-    
+  for (let i = countFrom; i <= countTo; i += step) {
+    console.log(i);
   }
+}
 
-}
-}
-findNumb(temps);
+count(1, 5); // countFrom = 1, countTo = 5, step = 1
+count(2); // countFrom = 2, countTo = 10, step = 1
+count(); // countFrom = 0, countTo = 10, step = 1
