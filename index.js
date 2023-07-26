@@ -1,19 +1,31 @@
 'use strict';
 
-// const petya = {
-//   username: "Petya",
-//   showName() {
-//     console.log(petya.username);
-//   },
-// };
+function findLongestWord(string) {
+ 
+    const array = string.split(" ");
 
-// petya.showName();
-// console.log(window)
+    
 
-// function foo() {
-//   console.log(this);
-// }
-const num1 = 8;
-const num2 = '10';
+      let longer = array[0];
 
-console.log(num1 ++ num2);
+      
+
+      for(let i =1; i <= array.length-1; i+=1){
+
+        
+
+        if(array[i].length > longer.length){
+
+            console.log(array[i].length)
+
+          longer = array[i]
+
+
+        }
+      }
+      console.log(longer)
+    return longer
+    
+      
+    }
+     findLongestWord('go toh my house')
