@@ -1,0 +1,12 @@
+.box {
+  display: flex;
+  font-size: 80px;
+
+  justify-content: center;
+  margin: 10px;
+  width: 100px;
+  height: 100px;
+  color: rgb(0, 0, 0);
+  background-color: blueviolet;
+  gap: 10px;
+}
