@@ -1,31 +1,11 @@
-'use strict';
+"use strict";
 
-function findLongestWord(string) {
- 
-    const array = string.split(" ");
+function calculateTotal(number) {
+  let total = 0;
+  for (let i = 1; i <= number; i += 1) {
+    total += i;
+  }
+  return total;
+}
 
-    
-
-      let longer = array[0];
-
-      
-
-      for(let i =1; i <= array.length-1; i+=1){
-
-        
-
-        if(array[i].length > longer.length){
-
-            console.log(array[i].length)
-
-          longer = array[i]
-
-
-        }
-      }
-      console.log(longer)
-    return longer
-    
-      
-    }
-     findLongestWord('go toh my house')
+console.log(calculateTotal(18));
